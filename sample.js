@@ -14,7 +14,7 @@ let container = {
                             {
                                 eleclsname: "banner",
                                 eletype: "img",
-                                src:"banner.jpg",
+                                src: "banner.jpg",
                             }
                         ]
                     },
@@ -33,7 +33,7 @@ let container = {
                                     eleclsname: "part2phase1",
                                     children:
                                         [
-                                            
+
                                             {
                                                 eletype: "h4",
                                                 textcontent1: "Hiring 13 Candidates in a month!",
@@ -50,24 +50,136 @@ let container = {
                                     eletype: "div",
                                     eleclsname: "part2phase2",
                                     children:
-                                    [
-                                        {
-                                            eletype: "p",
-                                            textcontent1: "In this human resources dashboard example, we can see a variety of key performance indicators for the HR department."
-                                        },
-                                    ]
+                                        [
+                                            {
+                                                eletype: "p",
+                                                textcontent1: "In this human resources dashboard example, we can see a variety of key performance indicators for the HR department."
+                                            },
+                                        ]
                                 }
                             ]
-                    }
-                ]
+                    },
+                ],
         },
         {
             eletype: "div",
-            eleclsname: "container2"
+            eleclsname: "container2",
+            children:[
+                {
+                    eletype: "div",
+                eleclsname: "cont2child1",
+                children:[
+                    {
+
+                        eletype: "div",
+                    eleclsname: "box1",
+                    children:[
+                        
+                           
+                            {
+                                eletype: "h4",
+                                textcontent1: "PayRoll",
+                            },
+                            
+                            {
+                                eletype: "p",
+                                textcontent1: "29 Calendar Days"
+                            },
+                        
+                    ]
+
+                    },
+                    {
+                        eletype: "hr",
+                        eleclsname: "hr"
+                    }
+
+                ]
+
+                },
+                {
+                    eletype: "div",
+                    eleclsname: "cont2child2",
+                    children:[
+                        {
+                            eletype: "div",
+                            eleclsname: "box2",
+                            children:[
+                                
+                                {
+                                    eletype: "h4",
+                                    textcontent1: "Total EMployees",
+                                },
+                                
+                                {
+                                    eletype: "p",
+                                    textcontent1: "130+2"
+                                },
+
+                            ]
+
+                        },
+                        {
+                            eletype: "hr",
+                            eleclsname: "hr"
+                        },
+                    ]
+                },
+                {
+                    eletype: "div",
+                    eleclsname: "cont2child3",
+                    children:[
+                        {
+                            eletype: "div",
+                            eleclsname: "box3",
+                            children:[
+                              
+                    {
+                        eletype: "h4",
+                        textcontent1: "Working Days",
+                    },
+                 
+                    {
+                        eletype: "p",
+                        textcontent1: "24"
+                    },
+                            ]
+                        },
+                        {
+                            eletype: "hr",
+                            eleclsname: "hr",
+                        }
+                    ]
+
+                },
+                {
+                    eletype: "div",
+                    eleclsname: "cont2child4",
+                    children:[
+                        {
+                            eletype: "div",
+                            eleclsname: "box4",
+                            children:[
+                                
+                                {
+                                    eletype: "h4",
+                                    textcontent1: "PayRoll Processed",
+                                },
+                                
+                                {
+                                    eletype: "p",
+                                    textcontent1: "121/130"
+                                },
+                            ]
+                        }
+                        
+                    ]
+
+                }
+            ]
         }
+     
     ]
-
-
 }
 
 function create(Obj) {
@@ -87,7 +199,7 @@ function create(Obj) {
             ele.appendChild(create(item));
         })
     }
-   return ele;
+    return ele;
 }
 
 let mainobj = create(container);
